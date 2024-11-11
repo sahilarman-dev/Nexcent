@@ -1,0 +1,101 @@
+/**phone device */
+@media (max-width:991px){
+nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav .navbar-toggler{
+    border: none;
+    font-size: 25px;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+nav ul li a.nav-link {
+    padding: 12px 25px !important;
+}
+element.style {
+    padding: 10px 0;
+}
+
+#banner h1{
+    font-size: 35px;
+    
+}
+
+#banner .img-fluid{
+    max-width: 64%;
+    height: auto;
+}
+#banner{
+    padding: 44px 0;
+}
+#unseen h1 {
+    font-size: 26px;
+}
+#unseen .img-fluit {
+    max-width: 90%;
+    height: auto;
+}
+#unseen span{
+	display: inline;
+}
+#smith .blankimg{
+    max-width: 90%;
+}
+#help .img-margin{
+padding-top: 20px;
+}
+#help h1 {
+
+    text-align: center;
+}
+#design .img-fluit{
+    max-width: 70%;
+    height: auto;
+}
+#design h1 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+#smith .container a img{
+	padding: 30px 50px 30px 10px;
+    
+}
+#caring .row div{
+    margin: 20px;
+}
+#caring p {
+    font-size: 18px;
+    width: 419px;
+}
+#ftext{
+    margin-top: 15px;
+}
+#ftext h1 {
+    font-size: 48px;
+}
+#footer .col-lg-2 {
+    padding-bottom: 0;
+}
+#footer .col-lg-2 p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--neutral-white);
+    padding: 39px 0 24px 0;
+}
+#footer .row{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+}
+
+
+
+
+/* dekstop device */
+@media (min-width:992px){
+
+}

@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+	--font-family: "Inter", sans-serif;
+	--neutral-white: #fff;
+	--neutral-silver: #f5f7fa;
+	--neutral-grey-blue: #abbed1;
+	--neutral-l-grey: #89939e;
+	--neutral-grey: #717171;
+	--neutral-d-grey: #4d4d4d;
+	--neutral-black: #263238;
+	--neutral-white-stroke: #abbed1;
+	--brand-info: #2194f3;
+	--brand-secondary: #263238;
+	--brand-primary: #4caf4f;
+	--shade-s1: #43a046;
+	--shade-s2: #388e3b;
+	--shade-s3: #237d31;
+	--shade-s4: #1b5e1f;
+	--shade-s5: #103e13;
+	--tint-t1: #66bb69;
+	--tint-t2: #81c784;
+	--tint-t3: #a5d6a7;
+	--tint-t4: #c8e6c9;
+	--tint-t5: #e8f5e9;
+	--action-success: #2e7d31;
+	--action-error: #e53835;
+	--action-warning: #fbc02d;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+span {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	font-family: var(--font-family);
+}
+
+.button {
+	border-radius: 6px;
+	padding: 10px 20px;
+	background: var(--brand-primary);
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 143%;
+	text-align: center;
+	color: var(--neutral-white);
+	display: inline-block;
+}
+
+.button-outline {
+	background-color: white;
+	color: var(--brand-primary);
+}
+
+nav ul li a.nav-link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	color: #18191f;
+	padding: 30px 25px !important;
+}
+
+nav .signinbtns a {
+	margin: 22px 7px;
+}
+
+#banner {
+	padding: 96px 0;
+	background: var(--neutral-silver);
+}
+
+#banner h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 119%;
+	color: var(--neutral-d-grey);
+}
+
+#banner h1 span {
+	color: var(--brand-primary);
+	display: block;
+}
+
+#banner p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--neutral-grey);
+	margin: 16px 0 32px;
+}
+
+#banner .button {
+	padding: 14px 32px;
+}
+
+#clients {
+	margin-top: 40px;
+}
+
+#clients h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 122%;
+	text-align: center;
+	color: var(--neutral-d-grey);
+}
+
+#clients p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: var(--neutral-grey);
+}
+
+#clients .container {
+	margin-top: 16px;
+}
+
+#clients .container a {
+	padding: 25px;
+}
+
+#clients .container img {
+	filter: grayscale(100%);
+}
+
+#clients .container img:hover {
+	filter: grayscale(0%);
+}
+
+#manage {
+	margin-top: 40px;
+}
+
+#manage h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 122%;
+	text-align: center;
+	color: var(--neutral-d-grey);
+}
+
+#manage p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: var(--neutral-grey);
+}
+
+#manage .container a img {
+	margin-top: 16px;
+}
+
+#unseen h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 122%;
+	color: var(--neutral-d-grey);
+	padding-bottom: 16px;
+}
+
+#unseen span {
+	display: block;
+}
+
+#unseen p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 143%;
+	color: var(--neutral-grey);
+	padding-bottom: 32px;
+}
+
+#unseen .button {
+	padding: 14px 32px;
+}
+
+#unseen .margin {
+	padding-left: 80px;
+}
+
+#help {
+	margin-top: 48px;
+}
+
+#help h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 122%;
+	color: var(--neutral-d-grey);
+	padding-bottom: 8px;
+}
+
+#help span {
+	display: block;
+	color: var(--brand-primary);
+}
+
+#help p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #18191f;
+}
+
+#design {
+	margin-top: 48px;
+}
+
+#design h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 122%;
+	color: var(--neutral-d-grey);
+}
+
+#design p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 143%;
+	color: var(--neutral-grey);
+	padding: 16px 0 32px;
+}
+
+#design .button {
+	padding: 14px 32px;
+}
+
+#smith {
+	background: var(--neutral-silver);
+	margin-top: 48px;
+}
+
+#smith p {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--neutral-grey);
+	padding-top: 33px;
+	text-align: justify;
+}
+
+#smith h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	color: var(--brand-primary);
+	padding-top: 15px;
+}
+
+#smith span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--neutral-l-grey);
+}
+#smith .container a img {
+	padding: 30px 20px 30px 0;
+}
+
+#caring {
+	margin-top: 48px;
+}
+
+#caring h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 122%;
+	text-align: center;
+	color: var(--neutral-d-grey);
+}
+
+#caring p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: var(--neutral-grey);
+	width: 628px;
+	margin: auto;
+	padding-top: 8px;
+}
+
+#caring .marketing {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	text-align: center;
+	color: var(--neutral-grey);
+	width: 285px;
+}
+
+#caring .row div {
+	border-radius: 8px;
+	padding: 16px;
+	width: 317px;
+	height: 176px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background: var(--neutral-silver);
+	margin: 100px 30px 100px 30px;
+}
+
+#ftext {
+	background: var(--neutral-silver);
+}
+
+#ftext h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 119%;
+	text-align: center;
+	color: var(--neutral-black);
+	padding-top: 32px;
+}
+
+#ftext a {
+	padding: 14px 32px;
+	margin: 32px;
+}
+
+#ftext .container div {
+	text-align: center;
+}
+
+#footer {
+	background: var(--neutral-black);
+}
+
+#footer img {
+	margin-top: 60px;
+}
+
+#footer p {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 143%;
+	color: var(--neutral-silver);
+	padding-top: 40px;
+
+}
+
+#footer p span {
+	display: block;
+	margin-bottom: 40px;
+}
+
+#footer .slink a {
+	padding: 0 10px 0 0;
+	color: white;
+	font-size: 20px;
+}
+
+#footer .col-lg-2 ul li a {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 143%;
+	color: var(--neutral-silver);
+}
+
+#footer .col-lg-2 ul li {
+	margin: 6px;
+}
+
+#footer .col-lg-2 p {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	color: var(--neutral-white);
+	padding: 64px 0 24px 0;
+}
+
+#footer .col-lg-2 {
+	padding-bottom: 64px;
+}
+
+#footer .col-lg-3 p {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	color: var(--neutral-white);
+	padding-top: 64px;
+}
+
+#footer input {
+	width: 255px;
+	height: 40px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 143%;
+	color: #d9dbe1;
+	border: none;
+	outline: 0;
+	background: var(--neutral-white);
+	opacity: 0.2;
+	border-radius: 8px;
+	padding-left: 10px;
+}
+
+#footer form {
+	margin-top: 24px;
+}
